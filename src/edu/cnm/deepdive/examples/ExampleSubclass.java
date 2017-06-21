@@ -12,6 +12,7 @@ public class ExampleSubclass extends ExampleClass {
   static {
     System.out.println("Static initialization of ExampleSubclass");
   }
+  
   {
     System.out.println("Instance initialization of ExampleSubclass object");
   }
@@ -31,5 +32,9 @@ public class ExampleSubclass extends ExampleClass {
     super(value);
     System.out.println("ExampleSubclass(int)");
   }
+public static void main (String[] args) {
+  ExampleSubclass example = new ExampleSubclass();
+  System.out.println(example.value);  
+}
 
 }
